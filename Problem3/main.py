@@ -1,5 +1,7 @@
 def horner_method(coefficients, x):
-    #输入区
+    result=coefficients[0]
+    for a in coefficients[1:]:
+        result=result*x+a
 
     return result
 
