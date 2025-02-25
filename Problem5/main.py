@@ -2,7 +2,14 @@
 
 def calculate_S(a0, a1, x0, x1, x):
     #输入区
-
+    S=0
+    s_list=[a0,a1]
+    x_list=[x0,x1]
+    for i in range(0,2):
+        for j in range(0,2):
+            if i!=j:
+                s_list[i]=(x-x_list[j])/(x_list[i]-x_list[j])*s_list[i]
+        S=S+s_list[i]
     
     return S
 
