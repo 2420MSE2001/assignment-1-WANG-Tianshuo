@@ -2,7 +2,10 @@
 
 def calculate_sum():
     # 在此编写代码
-
+    sum=0
+    for i in range(51):
+        sum+=i
+    return sum
 
 if __name__ == "__main__":
     result = calculate_sum()
