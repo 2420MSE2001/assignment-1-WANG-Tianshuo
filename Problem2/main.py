@@ -1,21 +1,16 @@
 def calculate_polynomial(n: int, x: int, xi_list: list) -> int:
     """
     计算多项式展开式 (x - x₁)(x - x₂)...(x - xn) 的值
-
-    
     参数:
     n -- 整数，表示xi的数量
-
     x -- 整数
-
     xi_list -- 包含n个整数的列表
-
-    
     返回:
     展开式的计算结果
-
     """
-
+    result=1
+    for xi in xi_list:
+        result*=(x-xi)
         
     return result
 
